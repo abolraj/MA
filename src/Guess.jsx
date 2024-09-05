@@ -3,7 +3,7 @@ import Letter from "./Letter";
 import Monitor from "./Monitor";
 import $ from 'jquery'
 
-function Guess({ words }) {
+function Guess({ words, onEnd }) {
 
     const [monitorWord, setMonitorWord] = useState('')
     const [wordIndex, setWordIndex] = useState(0)
@@ -25,10 +25,6 @@ function Guess({ words }) {
                 onLose()
             }
         }
-    }
-
-    const onEnd = function () {
-        alert('ended !')
     }
 
     const alrt = function (text) {
@@ -70,11 +66,9 @@ function Guess({ words }) {
 
     return (
         <div className="container-sm w-72 max-w-72 flex flex-col gap-2 mt-10">
-            {banner &&
-                <h2 className={"text-2xl" + (isWinner ? " text-success " : " text-error ")}>{banner}</h2>
-            }
+            <h2 className={"text-2xl" + (isWinner ? " text-success " : " text-error ") + (banner? "":" invisible ")}># {banner}</h2>
             <Monitor text={monitorWord} />
-            <div className="letters flex flex-wrap gap-2 justify-center">
+            <div className="letters flex flex-wrap gap-2 justify-center ">
                 {letters.map((letter, i) =>
                     <Letter letter={letter} onChoose={onLetterChoose} key={''+playCount+i}/>
                 )}
