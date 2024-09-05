@@ -10,7 +10,7 @@ function Letter({ letter = 'a', onChoose }) {
                 onChoose(letter)
                 setVisibility(false)
             }}
-            className={"letter btn btn-square bordered border-2 border-info rounded-lg text-xl flex items-center justify-center"+(visibility? "":" invisible ")}>
+            className={"letter btn btn-square bordered border-2 border-info rounded-lg text-xl font-black text-pink-400 flex items-center justify-center"+(visibility? "":" invisible ")}>
             <p>
                 {letter}
             </p>
