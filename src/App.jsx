@@ -14,7 +14,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <main class="container-fluid flex flex-col items-center">
+    <main className="container-fluid flex flex-col items-center">
       <Guess words={words}/>
     </main>
   )
