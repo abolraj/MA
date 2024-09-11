@@ -6,20 +6,12 @@ function TheEnd() {
                 <p className="flex flex-col items-center text-[#EC407A] justify-start">
                     <b className="text-9xl">M</b>
                     <b>O</b>
-                    <b>B</b>
-                    <b>I</b>
-                    <b>N</b>
-                    <b>A</b>
+                    <b>M</b>
                 </p>
                 <p className="flex flex-col items-center text-[#29B6F6] justify-start">
-                    <b className="text-9xl">A</b>
-                    <b>B</b>
-                    <b>O</b>
-                    <b>L</b>
-                    <b>F</b>
+                    <b className="text-9xl">D</b>
                     <b>A</b>
-                    <b>Z</b>
-                    <b>L</b>
+                    <b>D</b>
                 </p>
             </div>
         </div>

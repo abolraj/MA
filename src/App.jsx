@@ -4,13 +4,13 @@ import Guess from './Guess'
 import TheEnd from './TheEnd'
 
 const words = [
-  'hello',
-  'my',
-  'dear',
-  'friend',
-  'Mobina',
+  'i',
   'love',
-  'Abolfazl'
+  'you',
+  'my',
+  'mother',
+  'and',
+  'father'
 ]
 
 function App() {
